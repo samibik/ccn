@@ -32,9 +32,11 @@ $(document).ready(function() {
   function updateText(){
     var val = $(this).val();
     if (val == "") {
-      val = "The Life of Pablo";
+      val = "عذرا لم تظف النص;
     }
-   
+    val = val.split(" ").join("&nbsp;&nbsp;");
+    $lis.html(val);
+  }
   
   function updateImage() {
     var val = $(this).val();
@@ -53,7 +55,7 @@ $(document).ready(function() {
        var a = document.createElement('a');
         // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
         a.href = canvas.toDataURL();
-        a.download = 'the-life-of-pablo.jpg';
+        a.download = 'مونير.jpg';
         a.click();
     });
   }
