@@ -34,9 +34,7 @@ $(document).ready(function() {
     if (val == "") {
       val = "The Life of Pablo";
     }
-    val = val.split(" ").join("&nbsp;&nbsp;");
-    $lis.html(val);
-  }
+   
   
   function updateImage() {
     var val = $(this).val();
