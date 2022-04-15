@@ -32,7 +32,7 @@ $(document).ready(function() {
   function updateText(){
     var val = $(this).val();
     if (val == "") {
-      val = "عذرا لم تظف النص;
+      val = "عذرا لم تظف النص";
     }
     val = val.split(" ").join("&nbsp;&nbsp;");
     $lis.html(val);
