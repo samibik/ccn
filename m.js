@@ -55,7 +55,7 @@ $(document).ready(function() {
        var a = document.createElement('a');
         // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
         a.href = canvas.toDataURL();
-        a.download = 'open: ./output_arabic_image';
+        a.download = 'arabic_image.jpg';
         a.click();
     });
   }
